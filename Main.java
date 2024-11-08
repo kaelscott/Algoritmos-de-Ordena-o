@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class SortingAnalysis {
+public class Main {
     public static void main(String[] args) {
         // Pasta onde os arquivos CSV estão localizados
         String dataDir = "dados/";
