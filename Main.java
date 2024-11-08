@@ -3,22 +3,22 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Pasta onde os arquivos CSV estão localizados
+        // onde os arquivos CSV estão
         String dataDir = "dados/";
 
-        // Tipos de dados a serem analisados
+        // dados a serem analisados
         String[] dataTypes = {"aleatorio", "crescente", "decrescente"};
 
-        // Tamanhos de entrada a serem analisados
+        // tamanhos de entrada
         int[] dataSizes = {100, 1000, 10000};
 
-        // Imprimir cabeçalho antes de realizar os testes
+        // colunas
         System.out.println("Resultados da Análise de Desempenho:");
         System.out.println("=======================================================");
         System.out.printf("%-15s %-15s %-15s %-15s%n", "Algoritmo", "Tipo", "Tamanho", "Tempo (ns)");
         System.out.println("-------------------------------------------------------");
 
-        // Executar testes para cada tipo e tamanho de dados
+        // testes para cada tipo e tamanho de dados
         for (String dataType : dataTypes) {
             for (int dataSize : dataSizes) {
                 String filename = dataDir + dataType + "_" + dataSize + ".csv";
